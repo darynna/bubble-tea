@@ -14,7 +14,7 @@
   <body>
     <header>
       <div class="container header-container">
-        <img srcset="/logo.90a8f184.jpg 1x, /logo.90a8f184.jpg 2x" src="/logo.90a8f184.jpg" alt="logo" width="59" height="57">
+        <img class="header-img" srcset="/logo.90a8f184.jpg 1x, /logo.90a8f184.jpg 2x" src="/logo.90a8f184.jpg" alt="logo" width="59" height="57"> 
         <nav class="nav">
           <ul class="header-list">
             <li class="header-item">Home</li>
@@ -31,42 +31,55 @@
           <span class="text-accent">LOVE</span> &
           <span class="text-accent">JOY!</span>
           <button class="hero-button" href="">Our Location</button>
-          <img class="hero-photo" srcset="/hero-phone.64b19a7f.png 1x, /hero-phone@2x.e0d68b80.png 2x" src="/hero-phone@2x.e0d68b80.png" alt="bubble tea" width="360">
+          <picture class="hero-photo">
+        <source srcset="/comp-photo.50bf7eb0.png 1x, /comp-photo@2x.5467502e.png 2x" type="image/png" media="(min-width: 1158px)">    
+        <source srcset="/tablet-photo.3772a75b.png 1x, /tablet-photo@2x.60bf125f.png 2x" type="image/png" media="(min-width: 768px)">
+        <source srcset="/hero-phone.08733feb.png 1x, /hero-phone@2x.d6ff8e59.png 2x" type="image/png" media="(max-width: 767px)">
+        <img src="/hero-phone@2x.d6ff8e59.png" alt="bubble tea">
+        </picture>
         </h1>
       </div>
     </section>
     <section class="explore">
       <div class="container">
-        <h2>Explore Our Drinks!</h2>
-        <ul>
-          <li>
-            <img srcset="/photo1.b22ecd8f.jpg    1x, /photo1@2x.fce98126.jpg 2x" src="/hero-phone@2x.e0d68b80.png" alt="bubble tea" width="195">
+        <h2 class="explore-title section-title">Explore Our Drinks!</h2>
+        <ul class="explore-list">
+          <li class="explore-item">
+            <img class="explore-img side-explore-img" srcset="/photo1.b22ecd8f.jpg    1x, /photo1@2x.fce98126.jpg 2x" src="/photo2@2x.e9d030a6.jpg" alt="bubble tea" width="195">
           </li>
-          <li>
-            <img srcset="/photo2.61dea425.jpg    1x, /photo2@2x.e9d030a6.jpg 2x" src="/hero-phone@2x.e0d68b80.png" alt="bubble tea" width="245">
+          <li class="explore-item">
+            <img class="explore-img middle-explore-img" srcset="/photo2.61dea425.jpg    1x, /photo2@2x.e9d030a6.jpg 2x" src="/photo2@2x.e9d030a6.jpg" alt="bubble tea" width="245">
           </li>
-          <li>
-            <img srcset="/photo3.ae539ff3.jpg    1x, /photo3@2x.bf9d4a4c.jpg 2x" src="/hero-phone@2x.e0d68b80.png" alt="bubble tea" width="195">
+          <li class="explore-item side-explore-img">
+            <img class="explore-img" srcset="/photo3.ae539ff3.jpg    1x, /photo3@2x.bf9d4a4c.jpg 2x" src="/photo2@2x.e9d030a6.jpg" alt="bubble tea" width="195">
           </li>
         </ul>
       </div>
     </section>
     <section class="about">
-      <div class="container">
-        <h2>About Us</h2>
-        <p>
+      <div class="container about-container">
+        <div class="about-elements">
+        <h2 class="about-title section-title">About Us</h2>
+        <p class="about-text">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown dsd tfrfr swerre trtrtredv wkooqrg
           isnsllq3o
         </p>
-        <a href="">Find Us on Google!</a>
-        <img srcset="/photo.d755ab89.jpg    1x, /photo@2x.d46cef85.jpg 2x" src="/photo@2x.d46cef85.jpg" alt="bubble tea" width="160">
+        <button class="about-button">Find Us on Google!</button>
+        </div>
+        <div class="about-decoration-box"></div>
+        <div class="about-photoes-wrap">
+        <img class="about-img hide-about-img" srcset="/photo1.52e4b6a6.jpg    1x, /photo1@2x.884aa7f7.jpg 2x" src="/photo1@2x.884aa7f7.jpg" alt="bubble tea" width="160">
+            <img class="about-img hide-about-img" srcset="/photo2.8a008c92.jpg    1x, /photo2@2x.ec08256a.jpg 2x" src="/photo2@2x.ec08256a.jpg" alt="bubble tea" width="160">
+            <img class="about-img" srcset="/photo3.804f62a1.jpg    1x, /photo3@2x.37a5374d.jpg 2x" src="/photo3@2x.37a5374d.jpg" alt="bubble tea" width="160">
+            <img class="about-img hide-about-img" srcset="/photo4.de049f93.jpg    1x, /photo4@2x.8c9b6019.jpg 2x" src="/photo4@2x.8c9b6019.jpg" alt="bubble tea" width="160">
+</div>
       </div>
     </section>
     <section class="menu">
       <div class="container">
-      <h2>Are You Ready to 
+      <h2 class="menu-title section-title">Are You Ready to 
         Taste Our Flavors?</h2>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         <ul>
@@ -120,7 +133,7 @@
     </section>
     <section class="location">
       <div class="container">
-      <h2>Locate Us</h2>
+      <h2 class="locate-title section-title">Locate Us</h2>
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's  standard dummy text ever since the 1500s, when an unknown</p>
       <img srcset="/photo1.2f4aefa6.jpg   1x, /photo1@2x.1d0ce03f.jpg 2x" src="/photo1@2x.1d0ce03f.jpg" alt="bubble tea" width="186">
         <img srcset="/photo2.68525049.jpg   1x, /photo2@2x.3e258960.jpg 2x" src="/photo2@2x.3e258960.jpg" alt="bubble tea" width="232">

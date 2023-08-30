@@ -18,12 +18,13 @@
     <header>
       <div class="container header-container">
         <img 
+         class="header-img"
           srcset="./images/logo/logo.jpg 1x, ./images/logo/logo.jpg 2x"
           src="./images/logo/logo.jpg"
           alt="logo"
           width="59"
           height="57"
-        />
+        /> 
         <nav class="nav">
           <ul class="header-list">
             <li class="header-item">Home</li>
@@ -40,49 +41,48 @@
           <span class="text-accent">LOVE</span> &
           <span class="text-accent">JOY!</span>
           <button class="hero-button" href="">Our Location</button>
-          <img
-            class="hero-photo"
-            srcset="./images/hero-phone.png 1x, ./images/hero-phone@2x.png 2x"
-            src="./images/hero-phone@2x.png"
-            alt="bubble tea"
-            width="360"
-          />
+          <picture class="hero-photo">
+        <source srcset="./images/hero/comp-photo.png 1x, ./images/hero/comp-photo@2x.png 2x" type="image/png" media="(min-width: 1158px)" >    
+        <source srcset="./images/hero/tablet-photo.png 1x, ./images/hero/tablet-photo@2x.png 2x" type="image/png" media="(min-width: 768px)" >
+        <source srcset="./images/hero/hero-phone.png 1x, ./images/hero/hero-phone@2x.png 2x" type="image/png" media="(max-width: 767px)" />
+        <img src="./images/hero/hero-phone@2x.png" alt="bubble tea" />
+        </picture>
         </h1>
       </div>
     </section>
     <section class="explore">
       <div class="container">
-        <h2>Explore Our Drinks!</h2>
-        <ul>
-          <li>
-            <img
+        <h2 class="explore-title section-title">Explore Our Drinks!</h2>
+        <ul class="explore-list">
+          <li class="explore-item">
+            <img class="explore-img side-explore-img"
               srcset="
                 ./images/explore/photo1.jpg    1x,
                 ./images/explore/photo1@2x.jpg 2x
               "
-              src="./images/hero-phone@2x.png"
+              src="./images/explore/photo2@2x.jpg"
               alt="bubble tea"
               width="195"
             />
           </li>
-          <li>
-            <img
+          <li class="explore-item">
+            <img class="explore-img middle-explore-img"
               srcset="
                 ./images/explore/photo2.jpg    1x,
                 ./images/explore/photo2@2x.jpg 2x
               "
-              src="./images/hero-phone@2x.png"
+              src="./images/explore/photo2@2x.jpg"
               alt="bubble tea"
               width="245"
             />
           </li>
-          <li>
-            <img
+          <li class="explore-item side-explore-img">
+            <img class="explore-img"
               srcset="
                 ./images/explore/photo3.jpg    1x,
                 ./images/explore/photo3@2x.jpg 2x
               "
-              src="./images/hero-phone@2x.png"
+              src="./images/explore/photo2@2x.jpg"
               alt="bubble tea"
               width="195"
             />
@@ -91,29 +91,61 @@
       </div>
     </section>
     <section class="about">
-      <div class="container">
-        <h2>About Us</h2>
-        <p>
+      <div class="container about-container">
+        <div class="about-elements">
+        <h2 class="about-title section-title">About Us</h2>
+        <p class="about-text">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown dsd tfrfr swerre trtrtredv wkooqrg
           isnsllq3o
         </p>
-        <a href="">Find Us on Google!</a>
-        <img
+        <button class="about-button">Find Us on Google!</button>
+        </div>
+        <div class="about-decoration-box"></div>
+        <div class="about-photoes-wrap">
+        <img  class="about-img hide-about-img"
               srcset="
-                ./images/about/photo.jpg    1x,
-                ./images/about/photo@2x.jpg 2x
+                ./images/about/photo1.jpg    1x,
+                ./images/about/photo1@2x.jpg 2x
               "
-              src="./images/about/photo@2x.jpg"
+              src="./images/about/photo1@2x.jpg"
               alt="bubble tea"
               width="160"
             />
+            <img  class="about-img hide-about-img"
+              srcset="
+                ./images/about/photo2.jpg    1x,
+                ./images/about/photo2@2x.jpg 2x
+              "
+              src="./images/about/photo2@2x.jpg"
+              alt="bubble tea"
+              width="160"
+            />
+            <img  class="about-img"
+              srcset="
+                ./images/about/photo3.jpg    1x,
+                ./images/about/photo3@2x.jpg 2x
+              "
+              src="./images/about/photo3@2x.jpg"
+              alt="bubble tea"
+              width="160"
+            />
+            <img  class="about-img hide-about-img"
+              srcset="
+                ./images/about/photo4.jpg    1x,
+                ./images/about/photo4@2x.jpg 2x
+              "
+              src="./images/about/photo4@2x.jpg"
+              alt="bubble tea"
+              width="160"
+            />
+</div>
       </div>
     </section>
     <section class="menu">
       <div class="container">
-      <h2>Are You Ready to 
+      <h2 class="menu-title section-title">Are You Ready to 
         Taste Our Flavors?</h2>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         <ul>
@@ -181,7 +213,7 @@
     </section>
     <section class="location">
       <div class="container">
-      <h2>Locate Us</h2>
+      <h2 class="locate-title section-title">Locate Us</h2>
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's  standard dummy text ever since the 1500s, when an unknown</p>
       <img
               srcset="./images/location/photo1.jpg   1x,
