@@ -3,10 +3,221 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>Bubble tea</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="container header-container">
+        <img 
+          srcset="./images/logo/logo.jpg 1x, ./images/logo/logo.jpg 2x"
+          src="./images/logo/logo.jpg"
+          alt="logo"
+          width="59"
+          height="57"
+        />
+        <nav class="nav">
+          <ul class="header-list">
+            <li class="header-item">Home</li>
+            <li class="header-item">About</li>
+            <li class="header-item">Locate Us</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero-title">
+          Delicious Bubble Tea Created With
+          <span class="text-accent">LOVE</span> &
+          <span class="text-accent">JOY!</span>
+          <button class="hero-button" href="">Our Location</button>
+          <img
+            class="hero-photo"
+            srcset="./images/hero-phone.png 1x, ./images/hero-phone@2x.png 2x"
+            src="./images/hero-phone@2x.png"
+            alt="bubble tea"
+            width="360"
+          />
+        </h1>
+      </div>
+    </section>
+    <section class="explore">
+      <div class="container">
+        <h2>Explore Our Drinks!</h2>
+        <ul>
+          <li>
+            <img
+              srcset="
+                ./images/explore/photo1.jpg    1x,
+                ./images/explore/photo1@2x.jpg 2x
+              "
+              src="./images/hero-phone@2x.png"
+              alt="bubble tea"
+              width="195"
+            />
+          </li>
+          <li>
+            <img
+              srcset="
+                ./images/explore/photo2.jpg    1x,
+                ./images/explore/photo2@2x.jpg 2x
+              "
+              src="./images/hero-phone@2x.png"
+              alt="bubble tea"
+              width="245"
+            />
+          </li>
+          <li>
+            <img
+              srcset="
+                ./images/explore/photo3.jpg    1x,
+                ./images/explore/photo3@2x.jpg 2x
+              "
+              src="./images/hero-phone@2x.png"
+              alt="bubble tea"
+              width="195"
+            />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown dsd tfrfr swerre trtrtredv wkooqrg
+          isnsllq3o
+        </p>
+        <a href="">Find Us on Google!</a>
+        <img
+              srcset="
+                ./images/about/photo.jpg    1x,
+                ./images/about/photo@2x.jpg 2x
+              "
+              src="./images/about/photo@2x.jpg"
+              alt="bubble tea"
+              width="160"
+            />
+      </div>
+    </section>
+    <section class="menu">
+      <div class="container">
+      <h2>Are You Ready to 
+        Taste Our Flavors?</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <ul>
+          <li>
+            <h3>Step 1</h3>
+            <p>Choose base</p>
+            <ul>
+              <li><p>MILK</p></li>
+              <li><p>FRUIT</p></li>
+            </ul>
+            <img
+              srcset="./images/menu/photo.jpg    1x,
+              ./images/menu/photo@2x.jpg 2x
+              "
+              src="./images/menu/photo@2x.jpg"
+              alt="bubble tea"
+              width="62"
+            />
+            <p>&#163 3.5</p>
+          </li>
+          <li>
+            <h3>Step 2</h3>
+            <p>Choose flavour</p>
+            <ul>
+              <li>
+                <p>MILK</p>
+                <ul>
+                  <li>classic</li>
+                  <li>coffee</li>
+                  <li>honeydew</li>
+                  <li>mango</li>
+                  <li>thai</li>
+                  <li>matcha</li>
+                </ul>
+              </li>
+              <li>
+                <p>FRUIT</p>
+                <ul>
+                  <li>peach</li>
+                  <li>cherry</li>
+                  <li>orange</li>
+                  <li>lemon</li>
+                  <li>blueberry</li>
+                  <li>maango</li>
+                </ul>
+              </li>
+            </ul>
+            <p>and many others!</p>
+          </li>
+          <li>
+            <h3>Step 3</h3>
+            <p>Choose topping</p>
+            <img
+              srcset="./images/menu/photo2.png   1x,
+              ./images/menu/photo2@2x.png 2x
+              "
+              src="./images/menu/photo2@2x.png"
+              alt="bubble tea"
+              width="246"
+            />
+            <p>Lots of different choices!</p>
+          </li>
+        </ul>
+        </div>
+    </section>
+    <section class="location">
+      <div class="container">
+      <h2>Locate Us</h2>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's  standard dummy text ever since the 1500s, when an unknown</p>
+      <img
+              srcset="./images/location/photo1.jpg   1x,
+              ./images/location/photo1@2x.jpg 2x
+              "
+              src="./images/location/photo1@2x.jpg"
+              alt="bubble tea"
+              width="186"
+            />
+        <img
+              srcset="./images/location/photo2.jpg   1x,
+              ./images/location/photo2@2x.jpg 2x
+              "
+              src="./images/location/photo2@2x.jpg"
+              alt="bubble tea"
+              width="232"
+            />
+             <img
+              srcset="./images/location/photo3.jpg   1x,
+              ./images/location/photo3@2x.jpg 2x
+              "
+              src="./images/location/photo3@2x.jpg"
+              alt="bubble tea"
+              width="217"
+            />
+        <img
+              srcset="./images/location/photo4.jpg   1x,
+              ./images/location/photo4@2x.jpg 2x
+              "
+              src="./images/location/photo4@2x.jpg"
+              alt="bubble tea"
+              width="196"
+            />
+        <div class="map"></div>
+        </div>
+    </section>
+    <footer></footer>
   </body>
 </html>

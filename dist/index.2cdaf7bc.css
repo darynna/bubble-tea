@@ -1,0 +1,109 @@
+:root {
+  --primary-text-colour: #848484;
+  --title-text-colour: #000;
+  --primary-accent-colour: #d41443;
+  --secondary-accent-color: #ff0a54;
+  --accent-background-color: #ffb8c9;
+}
+
+body {
+  color: var(--primary-text-colour);
+  letter-spacing: .02em;
+  background-color: #fff;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.list {
+  list-style: none;
+}
+
+.container {
+  max-width: 428px;
+  min-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.header-item {
+  color: var(--title-text-colour);
+  letter-spacing: .24px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.header-list {
+  gap: 24px;
+  margin: 20px 0;
+  display: flex;
+}
+
+.header-container {
+  place-content: center space-around;
+  display: flex;
+}
+
+.hero {
+  background-color: var(--accent-background-color);
+  padding-top: 52px;
+  padding-bottom: 320px;
+  position: relative;
+}
+
+.hero-title {
+  color: var(--title-text-colour);
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.text-accent {
+  color: var(--primary-accent-colour);
+}
+
+.hero-button {
+  color: #fff;
+  background-color: var(--secondary-accent-color);
+  border: none;
+  border-radius: 40px;
+  margin: 40px 0 0;
+  padding: 12px 26px;
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+}
+
+.hero-photo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/*# sourceMappingURL=index.2cdaf7bc.css.map */

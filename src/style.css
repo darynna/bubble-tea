@@ -1,0 +1,139 @@
+:root {
+    --primary-text-colour: #848484;
+    --title-text-colour: #000;
+    --primary-accent-colour: #D41443;
+    --secondary-accent-color: #FF0A54;
+    --accent-background-color: #FFB8C9;
+}
+
+
+body {
+    background-color: #fff;
+    color: var(--primary-text-colour);
+    font-family: Poppins, sans-serif;
+    letter-spacing: 0.02em;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/**
+  |============================
+  | reset strart
+  |============================
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+button {
+    cursor: pointer
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.list {
+    list-style: none;
+}
+
+
+.container{
+    max-width: 428px;
+    min-width: 320px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+
+/**
+  |============================
+  | header
+  |============================
+*/
+
+.header-item{
+    color: var(--title-text-colour);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.24px;
+}
+
+.header-list{
+    display: flex;
+    gap: 24px;
+
+    margin: 20px 0 20px 0;
+}
+
+.header-container{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+
+/**
+  |============================
+  | hero
+  |============================
+*/
+
+.hero{
+    position: relative;
+    padding-top: 52px;
+    padding-bottom: 320px;
+    background-color: var(--accent-background-color);
+}
+
+.hero-title{
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--title-text-colour);
+}
+
+.text-accent{
+    color: var(--primary-accent-colour);
+}
+
+.hero-button{
+    display: block;
+    padding: 12px 26px;
+    margin: 40px 0 0 0;
+
+    border: none;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background-color: var(--secondary-accent-color);
+}
+
+.hero-photo{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
