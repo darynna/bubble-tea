@@ -92,10 +92,6 @@ img {
   }
 }
 
-.explore {
-  padding: 48px 0;
-}
-
 .header-item {
   color: var(--title-text-colour);
   letter-spacing: .24px;
@@ -173,6 +169,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero {
+    padding-top: 112px;
     padding-bottom: 250px;
   }
 
@@ -186,6 +183,10 @@ img {
     padding: 15px 45px;
     font-size: 18px;
   }
+}
+
+.explore {
+  padding: 86px 0;
 }
 
 .explore-img {
@@ -268,18 +269,20 @@ img {
   .about-container {
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
   }
 
   .about-text {
     width: 292px;
     text-align: start;
-    margin-top: 40px;
+    margin-top: 20px;
     font-size: 16px;
   }
 
   .about-title {
     text-align: start;
     margin-top: 36px;
+    margin-bottom: 24px;
   }
 
   .about-button {
@@ -289,12 +292,36 @@ img {
 }
 
 .about-decoration-box {
-  height: 100px;
-  width: 100%;
   background-color: var(--accent-background-color);
   position: absolute;
-  bottom: 100px;
-  right: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .about-decoration-box {
+    height: 100px;
+    width: 100%;
+    bottom: 100px;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-decoration-box {
+    width: 460px;
+    height: 312px;
+    z-index: -1;
+    border-radius: 10% 0 0 10%;
+    top: 110px;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .about-decoration-box {
+    width: 620px;
+    height: 442px;
+    top: 80px;
+  }
 }
 
 .about-img {
@@ -309,23 +336,57 @@ img {
     transform: translate(-50%);
   }
 
-  @media screen and (min-width: 1158px) {
-    .about-img {
-      width: 254px;
-    }
-  }
-
   .hide-about-img, .about-photoes-wrap {
     display: none;
+  }
+
+  .about-title {
+    font-size: 40px;
   }
 }
 
 .about-photoes-wrap {
-  width: 320px;
   flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
   display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .about-photoes-wrap {
+    width: 382px;
+    position: absolute;
+    right: 0;
+  }
+
+  .about-button {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .about-img {
+    width: 254px;
+  }
+
+  .about-photoes-wrap {
+    width: 534px;
+  }
+
+  .about-text {
+    width: 518px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1158px) {
+  .hide-about-text {
+    display: none;
+  }
+}
+
+.menu {
+  padding: 72px 0;
 }
 
 /*# sourceMappingURL=index.2cdaf7bc.css.map */
