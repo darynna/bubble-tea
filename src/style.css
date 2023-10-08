@@ -93,7 +93,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .section-title {
-    font-size: 36px;
+    font-size: 32px;
   }
 }
 
@@ -154,7 +154,7 @@ img {
   background-image: url("./images/hero/pattern.png");
   position: relative;
   padding-top: 52px;
-  padding-bottom: 320px;
+  padding-bottom: 420px;
   background-color: var(--accent-background-color);
   background-size: cover;
   /* or 'contain', depending on your preference */
@@ -194,7 +194,7 @@ img {
 @media screen and (min-width: 768px) {
   .hero {
     padding-top: 112px;
-    padding-bottom: 250px;
+    padding-bottom: 380px;
   }
 
   .hero-title {
@@ -214,7 +214,7 @@ img {
   |============================
 */
 .explore {
-  padding: 86px 0px;
+  padding: 48px 0px;
 }
 
 .explore-img {
@@ -231,6 +231,10 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .explore {
+    padding: 82px 0px 96px 0px;
+  }
+  
   .explore-list {
     margin-top: 24px;
 
@@ -241,6 +245,9 @@ img {
 }
 
 @media screen and (min-width: 1158px) {
+  .explore {
+    padding: 124px 0px 172px 0px;
+  }
   .explore-list {
     margin-top: 32px;
   }
@@ -260,7 +267,7 @@ img {
 */
 .about {
   position: relative;
-  padding-bottom: 290px;
+  padding-bottom: 288px;
 }
 .about-container {
   display: flex;
@@ -284,6 +291,9 @@ img {
   .about-elements {
     align-items: center;
   }
+  .hide-about-text{
+    display: none;
+  }
 }
 
 .about-button {
@@ -300,6 +310,9 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .about{
+    padding-bottom: 142px;
+  }
   .about-container {
     position: relative;
     flex-direction: row;
@@ -427,16 +440,18 @@ img {
   |============================
 */
 
-.menu {
+/* .menu {
   padding: 72px 0px;
-}
+} */
 
 
 .menu-list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 280x;
+  margin-top: 28px;
+  gap: 26px;
+  
 }
 
 .menu-item {
@@ -450,6 +465,7 @@ img {
   border-radius: 25px;
   box-shadow: 10px 10px 20px 0px rgba(255, 184, 201, 0.18);
 }
+
 
 .menu-item-title {
   color: #000;
@@ -492,6 +508,8 @@ img {
 }
 
 .menu-list-second{
+  margin-top: 22px;
+  margin-bottom: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -501,6 +519,8 @@ img {
 
 .menu-wrapper-list{
     width: 120px;
+    height: 206px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -509,9 +529,67 @@ img {
     background: #D2E4B9;
 }
 
+.menu-second-title{
+  color: #FF0A54;
+font-family: Poppins;
+font-size: 26px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%; /* 39px */
+letter-spacing: 0.52px;
+}
+
 .list-second{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 12px;
+
 } 
+
+.list-second-common{
+  color: var(--primary-accent-colour);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.36px;
+}
+
+@media screen and (min-width: 768px){
+  .menu-item{
+    width: 328px;
+height: 452px;
+  }
+  .menu-item-title{
+    font-size: 32px;
+  }
+  .menu-item-parag{
+font-size: 22px;
+  }
+  .menu-second-title{
+    font-size: 30px;
+  }
+  .list-second-common{
+    font-size: 22px;
+  }
+  .menu-wrapper-list{
+    width: 132;
+    height: 256px;
+  }
+  .menu-list{
+    gap: 54px;
+  }
+
+}
+
+@media screen and (min-width: 1158px){
+  .menu-list {
+  flex-direction: row;
+  align-items: center;
+  margin-top: 84px;
+  gap: 76px;
+  
+}
+}
