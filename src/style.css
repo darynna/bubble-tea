@@ -12,6 +12,8 @@
     --transition-duration: 250ms;
   }
 
+  
+
   html {
     scroll-behavior: smooth;
   }
@@ -109,59 +111,6 @@ img {
   | header
   |============================
 **/
-
-/* .header{
-    position: fixed;
-    width: 100%;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    background-color: white;
-    box-shadow: 0 -6px 10px 5px var(--header-shadow);
-  }
-
-
-.menu-toggle-icon{
-    stroke: black
-}
-
-.header-item {
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0.24px;
-  }
-  
-.nav-link{
-    color: var(--title-text-colour);
-    
-    transition-property: color;
-        transition-duration: var(--transition-duration);
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    
-.nav-link:hover{
-      color: var(--hover-color);
-    }
-
-.header-list {
-    display: flex;
-    gap: 24px;
-    margin: 20px 0 20px 0;
-}    
-
-.header-container {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  @media screen and (min-width: 768px){
-    .header-list {
-        margin: 24px 0 24px 0;
-      }
-  }  */
-
 
 
   .header {
@@ -994,7 +943,7 @@ color: var(--primary-text-colour);
     |============================
   */
 
-  .go-top {
+  /* .go-top {
     position: fixed; 
     right: 50px; 
     bottom:50px; 
@@ -1020,4 +969,35 @@ color: var(--primary-text-colour);
   .go-top--show {
     display: block;
   }
+   */
+
+   .go-top {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: none;
+    text-align: center;
+    color: var(--primary-accent-colour);
+    border: 1px solid var(--primary-accent-colour);
+    background-color: #fff;
+    padding: 10px 14px;
+    border-radius: 50%;
+    opacity: 0.7;
+    z-index: 10000;
+    transition: fill 250ms ease-in, border 250ms ease-in,
+      background-color 250ms ease-in;
+  }
   
+
+  .go-top:hover {
+    color: var(--hover-color);
+    border: 1px solid var(--hover-color);
+    background-color: var(--secondary-background-color);
+  }
+  
+  .go-top--show {
+    display: block;
+  }
