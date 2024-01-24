@@ -936,3 +936,68 @@ color: var(--primary-text-colour);
     }
   }
 
+
+  /**
+    |============================
+    | SCROLL
+    |============================
+  */
+
+  /* .go-top {
+    position: fixed; 
+    right: 50px; 
+    bottom:50px; 
+    z-index: 1000;
+    cursor: pointer; 
+    display: none;
+    font-size: 20px; 
+    color: var(--primary-accent-colour);
+    border: 1px solid var(--primary-accent-colour);
+    background-color: #fff;
+    padding: 10px 14px;
+    border-radius: 50%;
+  }
+  
+
+  .go-top:hover {
+    color: var(--hover-color);
+    border: 1px solid var(--hover-color);
+    background-color: var(--secondary-background-color);
+  }
+  
+
+  .go-top--show {
+    display: block;
+  }
+   */
+
+   .go-top {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: none;
+    text-align: center;
+    color: var(--primary-accent-colour);
+    border: 1px solid var(--primary-accent-colour);
+    background-color: #fff;
+    padding: 10px 14px;
+    border-radius: 50%;
+    opacity: 0.7;
+    z-index: 10000;
+    transition: fill 250ms ease-in, border 250ms ease-in,
+      background-color 250ms ease-in;
+  }
+  
+
+  .go-top:hover {
+    color: var(--hover-color);
+    border: 1px solid var(--hover-color);
+    background-color: var(--secondary-background-color);
+  }
+  
+  .go-top--show {
+    display: block;
+  }
