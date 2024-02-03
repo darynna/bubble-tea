@@ -1001,3 +1001,36 @@ color: var(--primary-text-colour);
   .go-top--show {
     display: block;
   }
+
+  
+ 
+
+
+  
+  .menu-item {
+    animation: scaleAndPause 8s linear infinite; /* Combined duration of 2s + 2s + 4s */
+  }
+  
+  @keyframes scaleAndPause {
+    0%, 100% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(1.1);
+    }
+    50%, 75% {
+      transform: scale(1);
+    }
+  }
+  
+  .menu-item:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .menu-item:nth-child(2) {
+    animation-delay: 1s; /* Starts after the first animation completes (2s + 2s + 4s) */
+  }
+  
+  .menu-item:nth-child(3) {
+    animation-delay: 2s; /* Starts after the first two animations complete (2s + 2s + 4s) */
+  }
